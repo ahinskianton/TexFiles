@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+\begin{center}
+    \textbf{\Huge \scshape Anton Ahinski} \\
+    \vspace{0.25cm}
+    \textbf{\Large Software Engineer} \\
+    \vspace{10pt}
+     +48725298237 $|$ \href{mailto:x@x.com}{\underline{ahinski.anton@gmail.com}} $|$ \href{https://www.linkedin.com/in/anton-ahinski/}{\underline{linkedin.com/in/anton-ahinski/}} $|$ \href{https://www.github.com/aahinski}{\underline{github.com/aahinski}}
+\end{center}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     \textbf{Programming languages:} Java, Python, Kotlin \\
+     \textbf{Frameworks and libraries:} Spring Boot, Spring MVC, Spring Data, Spring AOP, Spring Security, Hibernate, Java EE, JUnit, OpenTelemetry, Mockito, AssertJ, Numpy, Scipy \\
+     \textbf{Databases}: PostgreSQL, MySQL, MongoDB \\
+      \textbf{Tools:} Git, Docker, Kafka, Maven, Gradle, AWS, Kubernetes, JBoss \\
+
+      \resumeItem{Good knowledge of Object-Oriented Programming, Algorithms and Data Structures, Parallel Programming, Computational Mathematics and other Mathematical/Computer Science studies.}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Belarusian State University}{Minsk, Belarus}
+      {Bachelor, Applied Mathematics and Computer Science}{2020 -- 2024}
+      \resumeItem{Diploma thesis: Parallel Implementations of Ant Colony Optimization Algorithm}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Associate Software Engineer}{Sep 2024 --}
+      {Exadel}
+
+      \resumeItem{\begin{itemize}
+  \item Developing and maintaining distributed Spring Boot microservices in an event-driven architecture, implementing new features, fixing bugs, and optimizing legacy code. Built a reusable integration library for seamless communication with AWS S3 and AWS SageMaker models.
+  \item Working in Scrum and collaborating with cross-functional teams (QA, developers, product managers, stakeholders) to design scalable solutions, ensure requirements are met, and deliver reliable results. Closely collaborating with senior developers and tech leads to implement their solution requirements while also actively contributing and choosing appropriate technical solutions.
+  \item Participating in code reviews, sprint reviews, documentation, and knowledge transfer, mentoring new developers on both business and technical aspects of the projects.
+  \item Working with Docker, Kubernetes, and JBoss for deployments, Git for version control, and Maven for dependency management.
+  \item Tech stack: Java 17, Spring Boot 3, Spring Data, PostgreSQL, Kafka, AWS S3, AWS SageMaker, Spring Security, OpenTelemetry.
+
+\end{itemize}
+}
+
+    \vspace{0.2cm}
+
+    \resumeSubheading
+      {Java Developer}{May 2024 -- Sep 2024}
+      {Azati Software}
+
+      \resumeItem{Spring Boot, Spring MVC, Spring Data, Spring Security, Git, Gradle, JUnit, and PostgreSQL.}
+
+    \resumeSubheading
+      {Intern Java Developer}{Jan 2024 -- Apr 2024}
+      {Azati Software}
+
+    \resumeItem{Spring Boot, Spring Data, Spring Security, Spring AOP, Git, Docker, Kafka, Gradle, JUnit, and PostgreSQL.}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Languages}
+
+        \textbf{Belarusian} Native $|$ \textbf{Russian} Native $|$ \textbf{English} B2 $|$ \textbf{Polish} B1
+
+\vspace{0.2cm}
+
+  \small
+ \textit{ Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).}
+  \resumeSubHeadingListEnd
+
+\end{document}
