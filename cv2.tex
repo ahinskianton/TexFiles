@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+% Name and Contact
+\begin{center}
+    {\Huge John Doe} \\
+    \vspace{2mm}
+    \href{mailto:johndoe@example.com}{johndoe@example.com} \,|\, +1 234 567 8901 \,|\, \href{https://linkedin.com/in/johndoe}{linkedin.com/in/johndoe}
+\end{center}
+
+\vspace{6mm}
+
+% Sections
+\section*{Education}
+\textbf{Bachelor of Science in Computer Science} \hfill 2018 -- 2022 \\
+University of Example, City, Country
+
+\section*{Experience}
+\textbf{Software Engineer, TechCorp Inc.} \hfill Jul 2022 -- Present \\
+- Developed web applications using React and Node.js \\
+- Improved API performance by 30\%
+
+\textbf{Intern, Data Systems Ltd.} \hfill Jan 2021 -- May 2021 \\
+- Built data pipelines in Python \\
+- Automated reporting workflows
+
+\section*{Skills}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Programming: Python, Java, C++, JavaScript
+    \item Tools: Git, Docker, AWS
+    \item Languages: English (fluent), Spanish (intermediate)
+\end{itemize}
+
+\section*{Projects}
+\textbf{Personal Portfolio Website} -- Built using React, deployed on Netlify. \\
+\textbf{Machine Learning Research} -- Worked on sentiment analysis using deep learning.
+
+\end{document}
